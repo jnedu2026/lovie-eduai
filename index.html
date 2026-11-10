@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>挚谱融通 · 国开入口已迁移</title>
+<script>
+(function () {
+  var TARGET = 'https://eduai.open-edu.top';
+  var url = TARGET + location.pathname + location.search + location.hash;
+  try {
+    var a = document.createElement('a');
+    a.href = url;
+    document.getElementById('go').href = url;
+  } catch (e) {}
+  setTimeout(function () { location.replace(url); }, 60);
+})();
+</script>
+<style>
+  body{margin:0;font:15px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+       background:#f7f4ec;color:#12263f;display:flex;min-height:100vh;align-items:center;justify-content:center}
+  .card{background:#fffdf8;border:1px solid #e6e0d3;border-radius:14px;padding:34px 38px;max-width:520px;
+        box-shadow:0 18px 50px rgba(15,23,42,.10)}
+  h1{font-size:19px;margin:0 0 6px}
+  p{margin:6px 0;color:#4b5563;font-size:13.5px}
+  .brand{color:#c8a96a;font-size:12px;letter-spacing:1px;margin-bottom:14px}
+  a.btn{display:inline-block;margin-top:16px;background:#12263f;color:#fff;text-decoration:none;
+        padding:10px 18px;border-radius:8px;font-size:13.5px}
+  small{display:block;margin-top:14px;color:#8a8f98;font-size:11.5px;word-break:break-all}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="brand">挚谱融通</div>
+    <h1>国开入口已迁移，正在跳转…</h1>
+    <p>新地址：<b>eduai.open-edu.top</b></p>
+    <p>如果没有自动跳转，请点下面的按钮（原文件/接口路径会一并带过去）。</p>
+    <a class="btn" id="go" href="https://eduai.open-edu.top">打开新地址</a>
+    <small>本页只做跳转，不收集任何信息。</small>
+  </div>
+</body>
+</html>
